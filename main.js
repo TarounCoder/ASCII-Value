@@ -41,6 +41,23 @@ function my_keydown(e)
 	}
 }
 
+function my_keydown(e)
+{
+	keyPressed = e.keyCode;
+	console.log(keyPressed);
+	
+		if((keyPressed >=48 && keyPressed<=57))
+		//write a code to check the type of key pressed
+		{
+			numberkey();
+			document.getElementById("d1").innerHTML="You pressed Number Key";
+			console.log("number key");
+				}
+	else{
+		arrowkey();
+		document.getElementById("d1").innerHTML="You pressed arrow key";
+	}
+}
 function aplhabetkey()
 {
 	//upload respective image with the message. 
